@@ -9,6 +9,7 @@
         "ext-curl": "*",
         "ext-json": "*",
         "anlutro/l4-settings": "^0.7.3",
+        "apility/vipps": "^1.0",
         "barryvdh/laravel-dompdf": "^0.8.2",
         "benwilkins/laravel-fcm-notification": "^4.0",
         "caouecs/laravel-lang": "~3.0",
@@ -71,17 +72,6 @@
     "scripts": {
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
-          "post-update-cmd": [
-        "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-        "@php artisan ide-helper:generate",
-        "@php artisan ide-helper:meta",
-        "@php artisan ide-helper:models --nowrite"
-        ],
-        "post-install-cmd": [
-            "@php artisan ide-helper:generate",
-            "@php artisan ide-helper:meta",
-            "@php artisan ide-helper:models --nowrite"
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate"
