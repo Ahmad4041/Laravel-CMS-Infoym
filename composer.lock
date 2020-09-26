@@ -66,6 +66,62 @@
             "time": "2018-04-12T13:20:18+00:00"
         },
         {
+            "name": "apility/vipps",
+            "version": "v1.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/apility/vipps-php.git",
+                "reference": "451019ca1a80b473ef23bcac77c6c7af04e575c6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/apility/vipps-php/zipball/451019ca1a80b473ef23bcac77c6c7af04e575c6",
+                "reference": "451019ca1a80b473ef23bcac77c6c7af04e575c6",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3",
+                "php": "^7.1.0"
+            },
+            "require-dev": {
+                "brainmaestro/composer-git-hooks": "^2.6",
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^3.4"
+            },
+            "type": "library",
+            "extra": {
+                "hooks": {
+                    "pre-commit": [
+                        "vendor/bin/phpcbf --standard=ruleset.xml --encoding=utf-8 -n src tests"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Vipps\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Alrek",
+                    "email": "thomas@apility.no",
+                    "homepage": "https://github.com/thomas-alrek",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Vipps PHP Library",
+            "homepage": "https://github.com/apility/vipps-php",
+            "keywords": [
+                "ecommerce",
+                "vipps"
+            ],
+            "time": "2019-04-09T20:38:46+00:00"
+        },
+        {
             "name": "barryvdh/laravel-dompdf",
             "version": "v0.8.7",
             "source": {
