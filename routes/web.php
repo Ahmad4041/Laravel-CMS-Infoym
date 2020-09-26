@@ -30,6 +30,12 @@ Route::get('payments/paypal/express-checkout', 'PayPalController@getExpressCheck
 Route::get('payments/paypal/express-checkout-success', 'PayPalController@getExpressCheckoutSuccess');
 Route::get('payments/paypal', 'PayPalController@index')->name('paypal.index');
 
+Route::get('payments/vipps/failed/{userId}/{deliveryAddressId?}/{couponCode?}', 'VippsController@failed')->name('payments.vipps.failed');
+Route::get('payments/vipps/checkout', 'VippsController@checkout');
+Route::get('payments/vipps/pay-success/{userId}/{deliveryAddressId?}/{couponCode?}', 'VippsController@paySuccess');
+Route::get('payments/vipps/checkstatus/{userId}/{deliveryAddressId?}', 'VippsController@checkstatus');
+Route::get('payments/vipps', 'VippsController@index');
+
 Route::get('firebase/sw-js', 'AppSettingController@initFirebase');
 
 
