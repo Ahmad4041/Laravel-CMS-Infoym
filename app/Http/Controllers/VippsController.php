@@ -2,9 +2,9 @@
 
 
 /**
- * File name: RazorPayController.php
+ * File name: VippsContoller.php
  * Last modified: 2020.06.11 at 16:03:23
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Author: Ahmad Naeem
  * Copyright (c) 2020
  */
 
