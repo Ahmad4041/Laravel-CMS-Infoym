@@ -31,7 +31,10 @@
                     <a class="nav-link" href="{!! url('settings/payment/razorpay') !!}"><i class="fa fa-envelope-o mr-2"></i>{{trans('lang.app_setting_razorpay')}}@if(setting('enable_razorpay',false))<span class="badge ml-2 badge-success">{{trans('lang.active')}}</span>@endif
                     </a>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="{!! url('settings/payment/vipps') !!}"><i class="fa fa-envelope-o mr-2"></i>{{trans('lang.app_setting_vipps')}}@if(setting('enable_vipps',false))<span class="badge ml-2 badge-success">{{trans('lang.active')}}</span>@endif
+                    </a>
+                </li>
                 <div class="ml-auto d-inline-flex">
                     @can('currencies.index')
                         <li class="nav-item">
