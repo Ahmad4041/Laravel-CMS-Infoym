@@ -1,12 +1,8 @@
-# Food Delivery Flutter + PHP Laravel Admin Panel
+# PHP Laravel CMS Panel Boiler Plate
 
-## Important Links
- [Server Requirements](https://support.smartersvision.com/help-center/articles/3/4/3/introduction).
-  
- [How to Update to last version?](https://support.smartersvision.com/help-center/articles/3/4/9/update).
+## Liberary Used
+ [InfyOmLabs](https://github.com/InfyOmLabs/laravel-generator).
+## FAQ 
+[Email] ahmadnaeem4041@gmail.com
  
- [FAQ](https://support.smartersvision.com/help-center/categories/6/laravel-application-faq).
- 
-
-"# Fodd-App-Laravel" 
 # Laravel-CMS-Infoym
