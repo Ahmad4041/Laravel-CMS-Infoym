@@ -66,7 +66,7 @@ class DatabaseSeeder extends Seeder
         // $this->call(RestaurantsPayoutsTableSeeder::class);
 
         // $this->call(CouponPermission::class);
-        $this->call(SlidesSeeder::class);
+        // $this->call(SlidesSeeder::class);
     }
 
 }
