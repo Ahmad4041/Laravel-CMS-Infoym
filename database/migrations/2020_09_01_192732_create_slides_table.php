@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+//  Author: Muhammad Ahmad Naeem
 
 class CreateSlidesTable extends Migration
 {

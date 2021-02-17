@@ -1,8 +1,9 @@
 <?php
+
 /**
  * File name: RoleHasPermissionsTableSeeder.php
  * Last modified: 2020.05.06 at 10:12:55
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Author: Muhammad Ahmad Naeem
  * Copyright (c) 2020
  *
  */

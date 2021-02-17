@@ -2,7 +2,7 @@
 /**
  * File name: 2019_08_29_213921_create_payments_table.php
  * Last modified: 2020.04.30 at 08:21:09
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Author: Muhammad Ahmad Naeem
  * Copyright (c) 2020
  *
  */

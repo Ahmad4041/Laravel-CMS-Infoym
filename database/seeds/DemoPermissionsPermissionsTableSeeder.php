@@ -1,8 +1,9 @@
 <?php
+
 /**
  * File name: DemoPermissionsPermissionsTableSeeder.php
  * Last modified: 2020.05.04 at 09:04:19
- * Author: SmarterVision - https://codecanyon.net/user/smartervision
+ * Author: Muhammad Ahmad Naeem
  * Copyright (c) 2020
  *
  */

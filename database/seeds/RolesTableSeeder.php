@@ -1,5 +1,5 @@
 <?php
-
+//  Author: Muhammad Ahmad Naeem
 use Illuminate\Database\Seeder;
 
 class RolesTableSeeder extends Seeder
