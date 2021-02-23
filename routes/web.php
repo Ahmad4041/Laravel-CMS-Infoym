@@ -42,8 +42,8 @@ Route::get('firebase/sw-js', 'AppSettingController@initFirebase');
 Route::get('storage/app/public/{id}/{conversion}/{filename?}', 'UploadController@storage');
 Route::middleware('auth')->group(function () {
     Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index');
-    Route::get('/', 'DashboardController@index')->name('dashboard');
-
+    // Route::get('/', 'DashboardController@index')->name('dashboard');
+    Route::get('/', 'UserController@profile')->name('users.profile');
     Route::post('uploads/store', 'UploadController@store')->name('medias.create');
     Route::get('users/profile', 'UserController@profile')->name('users.profile');
     Route::post('users/remove-media', 'UserController@removeMedia');
