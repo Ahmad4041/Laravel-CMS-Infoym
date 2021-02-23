@@ -144,7 +144,7 @@
                             </tr>
                             </thead>
                             <tbody>
-                            @foreach($restaurants as $restaurant)
+                            {{-- @foreach($restaurants as $restaurant)
 
                                 <tr>
                                     <td>
@@ -158,7 +158,7 @@
                                         <a href="{!! route('restaurants.edit',$restaurant->id) !!}" class="text-muted"> <i class="fa fa-edit"></i> </a>
                                     </td>
                                 </tr>
-                            @endforeach
+                            @endforeach --}}
                             </tbody>
                         </table>
                     </div>
