@@ -16,6 +16,11 @@ class Create$MODEL_NAME_PLURAL$Table extends Migration
         Schema::create('$TABLE_NAME$', function (Blueprint $table) {
             $FIELDS$
         });
+        $data = [
+            ['something' => value1, 'somethingElse' => anotherValue1], // record 1
+            ['something' => value2, 'somethingElse' => anotherValue2], // record 2
+        ];
+         \DB::table('role_has_permissions')->insert(
     }
 
     /**

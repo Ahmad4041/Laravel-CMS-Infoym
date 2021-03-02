@@ -33,7 +33,7 @@ class CreatePermissionTables extends Migration
             $table->softDeletes();
         });
 
-        Schema::create($tableNames['model_has_permissions'], function (Blueprint $table) use ($tableNames) {
+        Schema::create($tableNames[' '], function (Blueprint $table) use ($tableNames) {
             $table->unsignedInteger('permission_id');
             $table->morphs('model');
 
