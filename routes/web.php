@@ -20,21 +20,21 @@
 Route::get('login/{service}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{service}/callback', 'Auth\LoginController@handleProviderCallback');
 Auth::routes();
+// Payment Method Routes
+// Route::get('payments/failed', 'PayPalController@index')->name('payments.failed');
+// Route::get('payments/razorpay/checkout', 'RazorPayController@checkout');
+// Route::post('payments/razorpay/pay-success/{userId}/{deliveryAddressId?}/{couponCode?}', 'RazorPayController@paySuccess');
+// Route::get('payments/razorpay', 'RazorPayController@index');
 
-Route::get('payments/failed', 'PayPalController@index')->name('payments.failed');
-Route::get('payments/razorpay/checkout', 'RazorPayController@checkout');
-Route::post('payments/razorpay/pay-success/{userId}/{deliveryAddressId?}/{couponCode?}', 'RazorPayController@paySuccess');
-Route::get('payments/razorpay', 'RazorPayController@index');
+// Route::get('payments/paypal/express-checkout', 'PayPalController@getExpressCheckout')->name('paypal.express-checkout');
+// Route::get('payments/paypal/express-checkout-success', 'PayPalController@getExpressCheckoutSuccess');
+// Route::get('payments/paypal', 'PayPalController@index')->name('paypal.index');
 
-Route::get('payments/paypal/express-checkout', 'PayPalController@getExpressCheckout')->name('paypal.express-checkout');
-Route::get('payments/paypal/express-checkout-success', 'PayPalController@getExpressCheckoutSuccess');
-Route::get('payments/paypal', 'PayPalController@index')->name('paypal.index');
-
-Route::get('payments/vipps/failed/{userId}/{deliveryAddressId?}/{couponCode?}', 'VippsController@failed')->name('payments.vipps.failed');
-Route::get('payments/vipps/checkout', 'VippsController@checkout');
-Route::get('payments/vipps/pay-success/{userId}/{deliveryAddressId?}/{couponCode?}', 'VippsController@paySuccess');
-Route::get('payments/vipps/checkstatus/{userId}/{deliveryAddressId?}', 'VippsController@checkstatus');
-Route::get('payments/vipps', 'VippsController@index');
+// Route::get('payments/vipps/failed/{userId}/{deliveryAddressId?}/{couponCode?}', 'VippsController@failed')->name('payments.vipps.failed');
+// Route::get('payments/vipps/checkout', 'VippsController@checkout');
+// Route::get('payments/vipps/pay-success/{userId}/{deliveryAddressId?}/{couponCode?}', 'VippsController@paySuccess');
+// Route::get('payments/vipps/checkstatus/{userId}/{deliveryAddressId?}', 'VippsController@checkstatus');
+// Route::get('payments/vipps', 'VippsController@index');
 
 Route::get('firebase/sw-js', 'AppSettingController@initFirebase');
 
@@ -87,48 +87,48 @@ Route::middleware('auth')->group(function () {
         });
     });
 
-    Route::post('cuisines/remove-media', 'CuisineController@removeMedia');
-    Route::resource('cuisines', 'CuisineController')->except([
-        'show'
-    ]);
+    // Route::post('cuisines/remove-media', 'CuisineController@removeMedia');
+    // Route::resource('cuisines', 'CuisineController')->except([
+    //     'show'
+    // ]);
 
-    Route::post('restaurants/remove-media', 'RestaurantController@removeMedia');
-    Route::get('requestedRestaurants', 'RestaurantController@requestedRestaurants')->name('requestedRestaurants.index'); //adeed
-    Route::resource('restaurants', 'RestaurantController')->except([
-        'show'
-    ]);
+    // Route::post('restaurants/remove-media', 'RestaurantController@removeMedia');
+    // Route::get('requestedRestaurants', 'RestaurantController@requestedRestaurants')->name('requestedRestaurants.index'); //adeed
+    // Route::resource('restaurants', 'RestaurantController')->except([
+    //     'show'
+    // ]);
 
-    Route::post('categories/remove-media', 'CategoryController@removeMedia');
-    Route::resource('categories', 'CategoryController')->except([
-        'show'
-    ]);
+    // Route::post('categories/remove-media', 'CategoryController@removeMedia');
+    // Route::resource('categories', 'CategoryController')->except([
+    //     'show'
+    // ]);
 
     Route::resource('faqCategories', 'FaqCategoryController')->except([
         'show'
     ]);
 
-    Route::resource('orderStatuses', 'OrderStatusController')->except([
-        'create', 'store', 'destroy'
-    ]);;
+    // Route::resource('orderStatuses', 'OrderStatusController')->except([
+    //     'create', 'store', 'destroy'
+    // ]);;
 
-    Route::post('foods/remove-media', 'FoodController@removeMedia');
-    Route::resource('foods', 'FoodController')->except([
-        'show'
-    ]);
+    // Route::post('foods/remove-media', 'FoodController@removeMedia');
+    // Route::resource('foods', 'FoodController')->except([
+    //     'show'
+    // ]);
 
-    Route::post('galleries/remove-media', 'GalleryController@removeMedia');
-    Route::resource('galleries', 'GalleryController')->except([
-        'show'
-    ]);
+    // Route::post('galleries/remove-media', 'GalleryController@removeMedia');
+    // Route::resource('galleries', 'GalleryController')->except([
+    //     'show'
+    // ]);
 
-    Route::resource('foodReviews', 'FoodReviewController')->except([
-        'show'
-    ]);
+    // Route::resource('foodReviews', 'FoodReviewController')->except([
+    //     'show'
+    // ]);
 
 
-    Route::resource('nutrition', 'NutritionController')->except([
-        'show'
-    ]);
+    // Route::resource('nutrition', 'NutritionController')->except([
+    //     'show'
+    // ]);
 
     Route::post('extras/remove-media', 'ExtraController@removeMedia');
     Route::resource('extras', 'ExtraController');
@@ -140,58 +140,58 @@ Route::middleware('auth')->group(function () {
     Route::resource('faqs', 'FaqController')->except([
         'show'
     ]);
-    Route::resource('restaurantReviews', 'RestaurantReviewController')->except([
-        'show'
-    ]);
+    // Route::resource('restaurantReviews', 'RestaurantReviewController')->except([
+    //     'show'
+    // ]);
 
-    Route::resource('favorites', 'FavoriteController')->except([
-        'show'
-    ]);
+    // Route::resource('favorites', 'FavoriteController')->except([
+    //     'show'
+    // ]);
 
-    Route::resource('orders', 'OrderController');
+    // Route::resource('orders', 'OrderController');
 
-    Route::resource('notifications', 'NotificationController')->except([
-        'create', 'store', 'update', 'edit',
-    ]);;
+    // Route::resource('notifications', 'NotificationController')->except([
+    //     'create', 'store', 'update', 'edit',
+    // ]);;
 
-    Route::resource('carts', 'CartController')->except([
-        'show', 'store', 'create'
-    ]);
-    Route::resource('deliveryAddresses', 'DeliveryAddressController')->except([
-        'show'
-    ]);
+    // Route::resource('carts', 'CartController')->except([
+    //     'show', 'store', 'create'
+    // ]);
+    // Route::resource('deliveryAddresses', 'DeliveryAddressController')->except([
+    //     'show'
+    // ]);
 
-    Route::resource('drivers', 'DriverController')->except([
-        'show'
-    ]);
+    // Route::resource('drivers', 'DriverController')->except([
+    //     'show'
+    // ]);
 
-    Route::resource('earnings', 'EarningController')->except([
-        'show', 'edit', 'update'
-    ]);
+    // Route::resource('earnings', 'EarningController')->except([
+    //     'show', 'edit', 'update'
+    // ]);
 
-    Route::resource('driversPayouts', 'DriversPayoutController')->except([
-        'show', 'edit', 'update'
-    ]);
+    // Route::resource('driversPayouts', 'DriversPayoutController')->except([
+    //     'show', 'edit', 'update'
+    // ]);
 
-    Route::resource('restaurantsPayouts', 'RestaurantsPayoutController')->except([
-        'show', 'edit', 'update'
-    ]);
+    // Route::resource('restaurantsPayouts', 'RestaurantsPayoutController')->except([
+    //     'show', 'edit', 'update'
+    // ]);
 
-    Route::resource('extraGroups', 'ExtraGroupController')->except([
-        'show'
-    ]);
+    // Route::resource('extraGroups', 'ExtraGroupController')->except([
+    //     'show'
+    // ]);
 
-    Route::post('extras/remove-media', 'ExtraController@removeMedia');
+    // Route::post('extras/remove-media', 'ExtraController@removeMedia');
 
-    Route::resource('extras', 'ExtraController')->except([
-        'show'
-    ]);
-    Route::resource('coupons', 'CouponController')->except([
-        'show'
-    ]);
-    Route::post('slides/remove-media','SlideController@removeMedia');
-    Route::resource('slides', 'SlideController')->except([
-        'show'
-    ]);
+    // Route::resource('extras', 'ExtraController')->except([
+    //     'show'
+    // ]);
+    // Route::resource('coupons', 'CouponController')->except([
+    //     'show'
+    // ]);
+    // Route::post('slides/remove-media','SlideController@removeMedia');
+    // Route::resource('slides', 'SlideController')->except([
+    //     'show'
+    // ]);
 });
 
